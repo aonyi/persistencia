@@ -47,6 +47,7 @@ Contributor(s):
     <property name="hibernate.connection.username">root</property>
     <property name="hibernate.connection.password">Pa$$w0rd</property>
     <!--property name="hibernate.hbm2ddl.auto">create</property-->
+    
     <mapping class="com.aonyi.persistencia.modelo.Cliente" file="" jar="" package="com.aonyi.persistencia.modelo" resource="resources/mapeos/Cliente.hbm.xml"/>
     <mapping class="com.aonyi.persistencia.modelo.Venta" file="" jar="" package="com.aonyi.persistencia.modelo" resource="resources/mapeos/Venta.hbm.xml"/>
   </session-factory>

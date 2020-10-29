@@ -12,6 +12,7 @@ public class ControladorCliente {
         //objetos vista y modelo
         private FrmListaClientes vListaCliente;
         private FrmCliente vCliente;
+        
         private Cliente modelo;
 
         //constructor para inicializar el modelo y la vista
@@ -59,12 +60,13 @@ public class ControladorCliente {
         
         public void mostrarVentanaCliente(){     
             this.vCliente = new FrmCliente(this);
+            // Setea la operacion de cierre con DISPOSE (no con CLOSE)
             vCliente.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
             vCliente.setVisible(true);
         }
         
         // obtiene un cliente a partir del id enviado como parametro
-        public Cliente getCliente(int Id){
+        public Cliente getCliente(Integer Id){
             // Crea una instancia de DAO
             ClienteDaoImplHibernate cd =  new ClienteDaoImplHibernate();
             modelo = cd.get(Id);           

@@ -9,7 +9,7 @@ public class app {
        
 
         // Se crea la clase controladora y se pide la vista
-        ControladorCliente controlador= new ControladorCliente();
+        ControladorCliente controlador = new ControladorCliente();
         
 
         // llama a la ventana y la muestra
